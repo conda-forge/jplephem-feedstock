@@ -12,7 +12,7 @@ source:
     - 0001_use-setuptools.patch
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -38,3 +38,4 @@ extra:
   recipe-maintainers:
     - juanlu001
     - brandon-rhodes
+    - jochym
