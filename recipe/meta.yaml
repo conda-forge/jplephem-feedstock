@@ -1,4 +1,4 @@
-{% set version = "2.5" %}
+{% set version = "2.6" %}
 
 package:
   name: jplephem
@@ -6,13 +6,13 @@ package:
 
 source:
   fn: jplephem-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/source/j/jplephem/jplephem-{{ version }}.tar.gz
-  md5: 2880f4a443cbc3ec3c9d90a9bc8e7d22
+  url: https://pypi.io/packages/source/j/jplephem/jplephem-{{ version }}.tar.gz
+  md5: 5959775cba483a88dd879a74e0b52971
   patches:
     - 0001_use-setuptools.patch
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
