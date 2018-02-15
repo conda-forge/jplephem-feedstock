@@ -1,13 +1,15 @@
-{% set version = "2.6" %}
+{% set name = "jplephem" %}
+{% set version = "2.7" %}
+{% set sha256 = "328d8561ee4189f259d9a807a01b3f2b5a4ff91484b79f5cf6f99cab3354c825" %}
 
 package:
-  name: jplephem
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: jplephem-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/j/jplephem/jplephem-{{ version }}.tar.gz
-  md5: 5959775cba483a88dd879a74e0b52971
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
   patches:
     - 0001_use-setuptools.patch
 
