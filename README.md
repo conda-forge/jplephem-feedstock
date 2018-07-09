@@ -14,14 +14,15 @@ Summary: Python version of NASA DE4xx ephemerides, the basis for the Astronomica
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jplephem-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/jplephem-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/jplephem-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/jplephem-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jplephem-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jplephem-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/jplephem-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/jplephem-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jplephem/badges/version.svg)](https://anaconda.org/conda-forge/jplephem)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jplephem/badges/downloads.svg)](https://anaconda.org/conda-forge/jplephem)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-jplephem-green.svg)](https://anaconda.org/conda-forge/jplephem) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jplephem.svg)](https://anaconda.org/conda-forge/jplephem) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jplephem.svg)](https://anaconda.org/conda-forge/jplephem) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jplephem.svg)](https://anaconda.org/conda-forge/jplephem) |
 
 Installing jplephem
 ===================
