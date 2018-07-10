@@ -21,6 +21,7 @@ build:
 requirements:
   host:
     - pip
+    - python
     - setuptools
     - numpy
   run:
