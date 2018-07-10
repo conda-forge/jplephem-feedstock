@@ -31,7 +31,6 @@ requirements:
 test:
   requires:
     - curl
-    - python >=3.6
   imports:
     - jplephem
   commands:
