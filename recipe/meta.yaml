@@ -15,16 +15,16 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  host:
+  build: 
     - pip
-    - python
     - setuptools
+  host:
+    - python
     - numpy
-
   run:
     - python
     - numpy
@@ -32,6 +32,13 @@ requirements:
 test:
   imports:
     - jplephem
+  commands:
+    - curl -O https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/a_old_versions/de421.bsp
+    - curl -O https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de430.bsp
+    - curl -O https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/a_old_versions/de405.bsp
+    - curl -O ftp://ssd.jpl.nasa.gov/pub/eph/planets/test-data/430/testpo.430
+    - python -m unittest discover jplephem.test
+    - python -m jplephem.jpltest
 
 about:
   home: https://pypi.python.org/pypi/jplephem
