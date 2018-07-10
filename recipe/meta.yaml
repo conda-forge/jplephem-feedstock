@@ -19,15 +19,9 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build: 
-    - pip
-    - setuptools
-    - numpy
-    - python
   host:
     - pip
     - setuptools
-    - python
     - numpy
   run:
     - python
