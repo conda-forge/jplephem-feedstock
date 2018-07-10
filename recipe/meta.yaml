@@ -29,6 +29,8 @@ requirements:
     - numpy
 
 test:
+  requires:
+    - curl
   imports:
     - jplephem
   commands:
