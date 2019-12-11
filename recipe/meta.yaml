@@ -1,6 +1,6 @@
 {% set name = "jplephem" %}
-{% set version = "2.9" %}
-{% set sha256 = "9dffb9f3d3f6d996ade875102431fe385e8ea422da25c8ba17b0508d9ca1282b" %}
+{% set version = "2.10" %}
+{% set sha256 = "d8a6a249b33f7a1d34d3a9ca90be9566609212ecd2e8a45d3becd29888d28133" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -44,6 +44,7 @@ test:
 about:
   home: https://pypi.python.org/pypi/jplephem
   license: MIT
+  license_file: LICENSE.txt
   summary: "Python version of NASA DE4xx ephemerides, the basis for the Astronomical Alamanac"
 
 extra:
