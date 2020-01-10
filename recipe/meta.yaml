@@ -44,6 +44,7 @@ test:
 about:
   home: https://pypi.python.org/pypi/jplephem
   license: MIT
+  license_file: LICENSE.txt
   summary: "Python version of NASA DE4xx ephemerides, the basis for the Astronomical Alamanac"
 
 extra:
