@@ -1,6 +1,6 @@
 {% set name = "jplephem" %}
-{% set version = "2.13" %}
-{% set sha256 = "17685ac008cfc35e1fdde33477eca730dad75c8cd3e1505aedf49ac3e322cecc" %}
+{% set version = "2.14" %}
+{% set sha256 = "316aa8ebb6d13fd2158c06b2709bcde382d04bf63bb1e48d0bce89937088c6e3" %}
 
 package:
   name: {{ name|lower }}
@@ -43,7 +43,7 @@ about:
   home: https://pypi.python.org/pypi/jplephem
   license: MIT
   license_file: LICENSE.txt
-  summary: "Python version of NASA DE4xx ephemerides, the basis for the Astronomical Alamanac"
+  summary: Python version of NASA DE4xx ephemerides, the basis for the Astronomical Alamanac
 
 extra:
   recipe-maintainers:
