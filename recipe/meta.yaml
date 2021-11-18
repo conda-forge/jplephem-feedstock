@@ -21,11 +21,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.3
     - setuptools
     - numpy
   run:
-    - python
+    - python >=3.3
     - numpy
 
 test:
