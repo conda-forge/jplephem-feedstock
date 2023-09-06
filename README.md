@@ -1,11 +1,11 @@
-About jplephem
-==============
+About jplephem-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jplephem-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.python.org/pypi/jplephem
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jplephem-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python version of NASA DE4xx ephemerides, the basis for the Astronomical Alamanac
 
