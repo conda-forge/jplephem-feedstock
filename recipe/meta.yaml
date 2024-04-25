@@ -1,6 +1,6 @@
 {% set name = "jplephem" %}
-{% set version = "2.21" %}
-{% set sha256 = "34194b610695f21b89217b9852b8dabadbce80848cb369d9567ef12dc4828d55" %}
+{% set version = "2.22" %}
+{% set sha256 = "0d9acc7217b4806feba93e72974ceead5611104bce6789af38d4f27dcf7a592c" %}
 
 package:
   name: {{ name|lower }}
