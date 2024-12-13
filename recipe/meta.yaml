@@ -8,29 +8,30 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
     - 0001_use-setuptools.patch
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.3
+    - python {{ python_min }}
     - setuptools
     - numpy
   run:
-    - python >=3.3
+    - python >={{ python_min }}
     - numpy
 
 test:
   requires:
     - curl
+    - python {{ python_min }}
   imports:
     - jplephem
   commands:
