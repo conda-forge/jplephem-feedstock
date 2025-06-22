@@ -1,6 +1,6 @@
 {% set name = "jplephem" %}
-{% set version = "2.21" %}
-{% set sha256 = "34194b610695f21b89217b9852b8dabadbce80848cb369d9567ef12dc4828d55" %}
+{% set version = "2.23" %}
+{% set sha256 = "d3fb9477e4bf4c39d10497d4ff15e5271b7ac03fa101e1821aac527d646eccf9" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
