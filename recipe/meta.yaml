@@ -12,10 +12,11 @@ source:
   sha256: {{ sha256 }}
   patches:
     - 0001_use-setuptools.patch
+    - ephemeris_excerpt.patch
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
